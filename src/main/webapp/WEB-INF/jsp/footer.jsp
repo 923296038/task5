@@ -53,7 +53,7 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 up-3">
                 <p>微信公众平台</p>
-                <img alt="" src="imges/2524.jpg">
+                <img alt="" src="/2524.jpg">
             </div>
         </div>
     </div>

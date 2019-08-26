@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.MajorMapper">
+    <resultMap id="MajorResultMap" type="com.pojo.Major">
+        <id property="id" column="id" javaType="int"/>
+        <result property="threshold" column="threshold" javaType="int"/>
+        <result property="difficulty" column="difficulty" javaType="int"/>
+        <result property="demand" column="demand" javaType="int"/>
+        <result property="y0_1" column="y0_1" javaType="int"/>
+        <result property="y1_2" column="y1_2" javaType="int"/>
+        <result property="y2_3" column="y2_3" javaType="int"/>
+        <result property="learning" column="learning" javaType="int"/>
+        <result property="create_at" column="create_at" javaType="long"/>
+        <result property="update_at" column="update_at" javaType="long"/>
+        <result property="major_name" column="major_name" javaType="String"/>
+        <result property="major_intro" column="major_intro" javaType="String"/>
+        <result property="major_intro_detailed" column="major_intro_detailed" javaType="String"/>
+        <result property="cycle" column="cycle" javaType="String"/>
+        <result property="tips" column="tips" javaType="String"/>
+        <result property="create_by" column="create_by" javaType="String"/>
+        <result property="update_by" column="update_by" javaType="String"/>
+
+    </resultMap>
+    <select id="findMajor" resultMap="MajorResultMap">
+        select * from majors
+    </select>
+</mapper>

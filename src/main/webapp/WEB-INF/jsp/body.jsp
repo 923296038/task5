@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>学员页面</title>
-    <link href="/other/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../bootstrap-3.3.5-dist/css/bootstrap.css">
-    <link href="/other/css/Untitled-3.css" rel="stylesheet" type="text/css">
-    <link href="/other/css/Untitled-1base.css" rel="stylesheet" type="text/css">
+    <link href="/Untitled-3.css" rel="stylesheet" type="text/css">
+    <link href="/Untitled-1base.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <%--<div class="container  hidden-xs">
@@ -18,9 +18,9 @@
         <p class="col-xs-12 col-sm-6 col-md-6 col-lg-6">客服电话:010-594-78634</p>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right">
             <div>
-                <a href="#" target="_blank"> <img alt=""  src="/other/images1/54537.png"></a>
-                <a href="#" target="_blank"><img alt=""  src="/other/images1/45678678.png"></a>
-                <a href="#" target="_blank"> <img alt=""  src="/other/images1/54375483543.png"></a>
+                <a href="#" target="_blank"> <img alt=""  src="/54537.png"></a>
+                <a href="#" target="_blank"><img alt=""  src="/45678678.png"></a>
+                <a href="#" target="_blank"> <img alt=""  src="/54375483543.png"></a>
             </div>
         </div>
     </div>
@@ -30,7 +30,7 @@
     <div class="container">
         <div class="navbar-header">
             <a href="#" class="navbar-brand">
-                <img src="/other/images1/logo.png" alt="Brand" class="img-responsive">
+                <img src="/logo.png" alt="Brand" class="img-responsive">
             </a>
             <button data-target="#open-nav" data-toggle="collapse" class="navbar-toggle btn-primary collapsed" aria-expanded="false">
                 <span class="icon-bar"></span>
@@ -59,22 +59,22 @@
     </ol>
     <div class="carousel-inner">
         <div class="item active">
-            <img alt="First slide" src="/other/images1/547567.jpg">
+            <img alt="First slide" src="/547567.jpg">
         </div>
         <div class="item">
-            <img alt="Second slide" src="/other/images1/547567.jpg">
+            <img alt="Second slide" src="/547567.jpg">
         </div>
         <div class="item">
-            <img alt="Third slide" src="/other/images1/547567.jpg">
+            <img alt="Third slide" src="/547567.jpg">
         </div>
         <div class="item">
-            <img alt="Third slide" src="/other/images1/547567.jpg">
+            <img alt="Third slide" src="/547567.jpg">
         </div>
         <a data-slide="prev" href="#myCarousel" class="carousel-control left">
-            <i class="icon-left"><img src="/other/images1/54354.png"></i>
+            <i class="icon-left"><img src="/54354.png"></i>
         </a>
         <a data-slide="next" href="#myCarousel" class="carousel-control right">
-            <i class="icon-right"><img src="/other/images1/4525424.png"></i>
+            <i class="icon-right"><img src="/4525424.png"></i>
         </a>
     </div>
 </div>
@@ -87,7 +87,7 @@
             <div class="row text-center">
                 <ul class="list-unstyled">
                     <li class="col-xs-12 up-1">
-                        <img alt="" src="/other/images1/45354312.png">
+                        <img alt="" src="/45354312.png">
                     </li>
                     <li class="up-2 col-xs-12">高效</li>
                     <li class="up-3 col-xs-12">将三到七年的成长时间,缩短到一年到两年</li>
@@ -99,7 +99,7 @@
             <div class="row text-center">
                 <ul class="list-unstyled">
                     <li class="col-xs-12 up-1">
-                        <img alt="" src="/other/images1/879789.png">
+                        <img alt="" src="/879789.png">
                     </li>
                     <li class="up-2 col-xs-12">规范</li>
                     <li class="up-3 col-xs-12">标准到实战教程,不会走弯路</li>
@@ -111,7 +111,7 @@
             <div class="row text-center">
                 <ul class="list-unstyled">
                     <li class="col-xs-12 up-1">
-                        <img alt="" src="/other/images1/786453654365.png">
+                        <img alt="" src="/786453654365.png">
                     </li>
                     <li class="up-2 col-xs-12">人脉</li>
                     <li class="up-3 col-xs-12">同班好友,同院学长,技术大师,入学就混职脉圈,为以后铺平道路</li>
@@ -121,11 +121,11 @@
 
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
             <p>
-                <img src="/other/images1/453254312.png">${learning}<br>
+                <img src="/453254312.png">${learning}<br>
                 <span class="up-3">累计在线学习人数</span>
             </p>
             <p>
-                <img src="/other/images1/453254312.png">${working}<br>
+                <img src="/453254312.png">${working}<br>
                 <span class="up-3">学员已经找到满意工作</span>
             </p>
         </div>
@@ -200,19 +200,19 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <ul class="logo">
                 <li>
-                    <a href=""><img src="/other/images1/123132.png"></a>
+                    <a href=""><img src="/123132.png"></a>
                 </li>
                 <li>
-                    <a href=""> <img src="/other/images1/1549865.png"></a>
+                    <a href=""> <img src="/1549865.png"></a>
                 </li>
                 <li>
-                    <a href=""> <img src="/other/images1/785345.png"></a>
+                    <a href=""> <img src="/785345.png"></a>
                 </li>
                 <li>
-                    <a href=""> <img src="/other/images1/1471.png"></a>
+                    <a href=""> <img src="/1471.png"></a>
                 </li>
                 <li>
-                    <a href="">  <img src="/other/images1/7861.png"></a>
+                    <a href="">  <img src="/7861.png"></a>
                 </li>
             </ul>
         </div>
@@ -241,7 +241,7 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 up-3">
                 <p>微信公众平台</p>
-                <img alt="" src="/other/images1/2524.jpg">
+                <img alt="" src="/2524.jpg">
             </div>
         </div>
     </div>
@@ -250,6 +250,6 @@
     </div>
 </div>--%>
 </body>
-<script src="other/js/jquery.min.js"></script>
-<script  src="other/js/bootstrap.min.js"></script>
+<script src="/jquery.min.js"></script>
+<script  src="/bootstrap.min.js"></script>
 </html>

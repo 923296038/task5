@@ -17,9 +17,5 @@
         <put-attribute name="body"   value="/WEB-INF/jsp/body1.jsp"  />
         <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp"/>
     </definition>
-    <definition name="page2" extends="layout">
-        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp"/>
-        <put-attribute name="body"   value="/WEB-INF/jsp/test.jsp"  />
-        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp"/>
-    </definition>
+
 </tiles-definitions>

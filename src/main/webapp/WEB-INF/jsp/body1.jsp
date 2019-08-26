@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link href="/other/css/t11.css" rel="stylesheet" type="text/css">
-    <link href="/other/css/base.css" rel="stylesheet" type="text/css">
-    <link href="/other/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/t11.css" rel="stylesheet" type="text/css">
+    <link href="/base.css" rel="stylesheet" type="text/css">
+    <link href="/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../bootstrap-3.3.5-dist/css/bootstrap.css">
-    <link href="/other/css/Untitled-3.css" rel="stylesheet" type="text/css">
-    <link href="/other/css/Untitled-1base.css" rel="stylesheet" type="text/css">
+    <link href="/Untitled-3.css" rel="stylesheet" type="text/css">
+    <link href="/Untitled-1base.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -84,7 +84,7 @@
         <div class="col-md-4 col-sm-6 col-xs-12 top-margin">
             <div class="warp-border">
                 <div class="clearfix">
-                    <div class="icon-people"><img src="other/images2/687.png"></div>
+                    <div class="icon-people"><img src="/687.png"></div>
                     <div class="text">
                         <h4 class="">${major.major_name}</h4>
                         <p class="text-present">${major.major_intro}</p>
@@ -95,14 +95,14 @@
                     <div class="warp-class2-text">
                         <div class="iconfont text-padding">threshold
                             <c:forEach begin="1" end="${major.threshold}">
-                                <img src="other/images2/xx.png">
+                                <img src="/xx.png">
                             </c:forEach>
                         </div>
                     </div>
                     <div class="warp-class2-text">
                         <div class="iconfont text-padding text-border-left">difficulty
                             <c:forEach begin="1" end="${major.difficulty}">
-                                <img src="other/images2/xx.png">
+                                <img src="/xx.png">
                             </c:forEach>
                         </div>
                     </div>
@@ -163,7 +163,7 @@
         <div class="col-md-4 col-sm-6 col-xs-12 top-margin">
                 <div class="warp-border">
                     <div class="clearfix">
-                        <div class="icon-people"><img src="other/images2/687.png"></div>
+                        <div class="icon-people"><img src="/687.png"></div>
                         <div class="text">
                             <h4 class="">${major.major_name}</h4>
                             <p class="text-present">${major.major_intro}</p>
@@ -174,14 +174,14 @@
                         <div class="warp-class2-text">
                             <div class="iconfont text-padding">threshold
                                 <c:forEach begin="1" end="${major.threshold}">
-                                    <img src="other/images2/xx.png">
+                                    <img src="/xx.png">
                                 </c:forEach>
                             </div>
                         </div>
                         <div class="warp-class2-text">
                             <div class="iconfont text-padding text-border-left">difficulty
                                 <c:forEach begin="1" end="${major.difficulty}">
-                                    <img src="other/images2/xx.png">
+                                    <img src="/xx.png">
                                 </c:forEach>
                             </div>
                         </div>
@@ -243,7 +243,7 @@
                     <div class="warp-border">
                         <div class="clearfix">
                             <div class="icon-people">
-                                <img src="other/images2/687.png">
+                                <img src="/687.png">
                             </div>
                             <div class="text">
                                 <h4 class="">${major.major_name}</h4>
@@ -255,14 +255,14 @@
                             <div class="warp-class2-text">
                                 <div class="iconfont text-padding">threshold
                                     <c:forEach begin="1" end="${major.threshold}">
-                                        <img src="other/images2/xx.png">
+                                        <img src="/xx.png">
                                     </c:forEach>
                                 </div>
                             </div>
                             <div class="warp-class2-text">
                                 <div class="iconfont text-padding text-border-left">difficulty
                                     <c:forEach begin="1" end="${major.difficulty}">
-                                        <img src="other/images2/xx.png">
+                                        <img src="/xx.png">
                                     </c:forEach>
                                 </div>
                             </div>
@@ -315,6 +315,6 @@
 </div>
 
 </body>
-<script src="other/js/jquery.min.js"></script>
-<script  src="other/js/bootstrap.min.js"></script>
+<script src="/jquery.min.js"></script>
+<script  src="/bootstrap.min.js"></script>
 </html>

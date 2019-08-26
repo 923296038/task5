@@ -305,7 +305,7 @@
   </dependencies>
 
   <build>
-    <finalName>Task</finalName>
+    <finalName>Task4</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
