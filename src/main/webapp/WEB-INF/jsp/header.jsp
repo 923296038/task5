@@ -11,9 +11,9 @@
         <p class="col-xs-12 col-sm-6 col-md-6 col-lg-6">客服电话:010-594-78634</p>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right">
             <div>
-                <a href="#" target="_blank"> <img alt=""  src="/54537.png"></a>
-                <a href="#" target="_blank"><img alt=""  src="/45678678.png"></a>
-                <a href="#" target="_blank"> <img alt=""  src="/54375483543.png"></a>
+                <a href="#" target="_blank"> <img alt=""  src="/Task4/other/images1/54537.png"></a>
+                <a href="#" target="_blank"><img alt=""  src="/Task4/other/images1/45678678.png"></a>
+                <a href="#" target="_blank"> <img alt=""  src="/Task4/other/images1/54375483543.png"></a>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
     <div class="container">
         <div class="navbar-header">
             <a href="#" class="navbar-brand">
-                <img src="/logo.png" alt="Brand" class="img-responsive">
+                <img src="/Task4/other/images1/logo.png" alt="Brand" class="img-responsive">
             </a>
             <button data-target="#open-nav" data-toggle="collapse" class="navbar-toggle btn-primary collapsed" aria-expanded="false">
                 <span class="icon-bar"></span>

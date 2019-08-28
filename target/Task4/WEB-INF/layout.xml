@@ -6,16 +6,16 @@
     <!--主布局-->
     <definition name="layout" template="/WEB-INF/jsp/mainLayout.jsp">
     </definition>
-    <!--项目-->
-    <definition name="page" extends="layout">
+    <!--模块myView,继承自主布局模板-->
+    <definition name="myView" extends="layout">
         <put-attribute name="header" value="/WEB-INF/jsp/header.jsp"/>
-        <put-attribute name="body"   value="/WEB-INF/jsp/body.jsp"  />
+        <put-attribute name="item"   expression="/WEB-INF/jsp/${item}.jsp"  />
         <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp"/>
     </definition>
-    <definition name="page1" extends="layout">
-        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp"/>
-        <put-attribute name="body"   value="/WEB-INF/jsp/body1.jsp"  />
-        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp"/>
-    </definition>
+<!--    <definition name="temp1" extends="layout">-->
+<!--        <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp"/>-->
+<!--        <put-attribute name="item"   expression="/WEB-INF/jsp/${item}.jsp"  />-->
+<!--        <put-attribute name="footer" value="/WEB-INF/jsp/side.jsp"/>-->
+<!--    </definition>-->
 
 </tiles-definitions>

@@ -6,6 +6,7 @@
 
     <tag>
         <name>date</name>
+        <!--路径-->
         <tag-class>com.converter.DateTag</tag-class>
         <body-content>JSP</body-content>
         <attribute>

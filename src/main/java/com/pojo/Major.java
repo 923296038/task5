@@ -11,6 +11,7 @@ public class Major {
     private int learning;
     private long create_at;
     private long update_at;
+    private int type;
     private String major_name;
     private String major_intro;
     private String major_intro_detailed;
@@ -32,6 +33,7 @@ public class Major {
                 ", learning=" + learning +
                 ", create_at=" + create_at +
                 ", update_at=" + update_at +
+                ", type=" + type +
                 ", major_name='" + major_name + '\'' +
                 ", major_intro='" + major_intro + '\'' +
                 ", major_intro_detailed='" + major_intro_detailed + '\'' +
@@ -122,6 +124,14 @@ public class Major {
         this.update_at = update_at;
     }
 
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
     public String getMajor_name() {
         return major_name;
     }
@@ -178,7 +188,7 @@ public class Major {
         this.update_by = update_by;
     }
 
-    public Major(int id, int threshold, int difficulty, int demand, int y0_1, int y1_2, int y2_3, int learning, long create_at, long update_at, String major_name, String major_intro, String major_intro_detailed, String cycle, String tips, String create_by, String update_by) {
+    public Major(int id, int threshold, int difficulty, int demand, int y0_1, int y1_2, int y2_3, int learning, long create_at, long update_at, int type, String major_name, String major_intro, String major_intro_detailed, String cycle, String tips, String create_by, String update_by) {
         this.id = id;
         this.threshold = threshold;
         this.difficulty = difficulty;
@@ -189,6 +199,7 @@ public class Major {
         this.learning = learning;
         this.create_at = create_at;
         this.update_at = update_at;
+        this.type = type;
         this.major_name = major_name;
         this.major_intro = major_intro;
         this.major_intro_detailed = major_intro_detailed;

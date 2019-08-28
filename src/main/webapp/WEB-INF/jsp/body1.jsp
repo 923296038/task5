@@ -16,47 +16,16 @@
     <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link href="/t11.css" rel="stylesheet" type="text/css">
-    <link href="/base.css" rel="stylesheet" type="text/css">
-    <link href="/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/Task4/other/css/t11.css" rel="stylesheet" type="text/css">
+    <link href="/Task4/other/css/base.css" rel="stylesheet" type="text/css">
+    <link href="/Task4/other/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../bootstrap-3.3.5-dist/css/bootstrap.css">
-    <link href="/Untitled-3.css" rel="stylesheet" type="text/css">
-    <link href="/Untitled-1base.css" rel="stylesheet" type="text/css">
+    <link href="/Task4/other/css/Untitled-3.css" rel="stylesheet" type="text/css">
+    <link href="/Task4/other/css/Untitled-1base.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<%--<header>
-    <div class="top container">
-        <p class="hidden-xs">客服热线：010-594-78634</p>
-        <img src="other/images2/12321.gif">
-    </div>
 
-    <div role="navigation" class="nav1 navbar navbar-default">
-        <div class="container">
-            <div class="header-logo">
-                <div class="logo-middle"><img src="other/images2/logo.png"></div>
-            </div>
-            <div class="navbar-header marginTop">
-                <button data-target="#example-navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-                    <span class="sr-only">切换导航</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-
-            <div id="example-navbar-collapse" class=" collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <a href=""><li>首 页</li></a>
-                    <a href=""><li class="border">职 业</li></a>
-                    <a href=""><li>推 荐</li></a>
-                    <a href=""><li>关 于</li></a>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-</header>--%>
 
 <div class="container">
 
@@ -80,11 +49,11 @@
 
     <div class="row">
         <c:forEach items="${majorList}" var="major">
-            <c:if test="${major.major_name=='Web前端工程师'}">
+            <c:if test="${major.type==1}">
         <div class="col-md-4 col-sm-6 col-xs-12 top-margin">
             <div class="warp-border">
                 <div class="clearfix">
-                    <div class="icon-people"><img src="/687.png"></div>
+                    <div class="icon-people"><img src="/Task4/other/images2/687.png"></div>
                     <div class="text">
                         <h4 class="">${major.major_name}</h4>
                         <p class="text-present">${major.major_intro}</p>
@@ -95,14 +64,14 @@
                     <div class="warp-class2-text">
                         <div class="iconfont text-padding">threshold
                             <c:forEach begin="1" end="${major.threshold}">
-                                <img src="/xx.png">
+                                <img src="/Task4/other/images2/xx.png">
                             </c:forEach>
                         </div>
                     </div>
                     <div class="warp-class2-text">
                         <div class="iconfont text-padding text-border-left">difficulty
                             <c:forEach begin="1" end="${major.difficulty}">
-                                <img src="/xx.png">
+                                <img src="/Task4/other/images2/xx.png">
                             </c:forEach>
                         </div>
                     </div>
@@ -159,11 +128,11 @@
 
     <div class="row">
         <c:forEach items="${majorList}" var="major">
-            <c:if test="${major.major_name=='Java后端工程师'}">
+            <c:if test="${major.type==2}">
         <div class="col-md-4 col-sm-6 col-xs-12 top-margin">
                 <div class="warp-border">
                     <div class="clearfix">
-                        <div class="icon-people"><img src="/687.png"></div>
+                        <div class="icon-people"><img src="/Task4/other/images2/687.png"></div>
                         <div class="text">
                             <h4 class="">${major.major_name}</h4>
                             <p class="text-present">${major.major_intro}</p>
@@ -174,14 +143,14 @@
                         <div class="warp-class2-text">
                             <div class="iconfont text-padding">threshold
                                 <c:forEach begin="1" end="${major.threshold}">
-                                    <img src="/xx.png">
+                                    <img src="/Task4/other/images2/xx.png">
                                 </c:forEach>
                             </div>
                         </div>
                         <div class="warp-class2-text">
                             <div class="iconfont text-padding text-border-left">difficulty
                                 <c:forEach begin="1" end="${major.difficulty}">
-                                    <img src="/xx.png">
+                                    <img src="/Task4/other/images2/xx.png">
                                 </c:forEach>
                             </div>
                         </div>
@@ -238,12 +207,12 @@
 
     <div class="row padding-bottom">
         <c:forEach items="${majorList}" var="major">
-            <c:if test="${major.major_name=='iOS工程师'}">
+            <c:if test="${major.type==3}">
                 <div class="col-md-4 col-sm-6 col-xs-12 top-margin">
                     <div class="warp-border">
                         <div class="clearfix">
                             <div class="icon-people">
-                                <img src="/687.png">
+                                <img src="/Task4/other/images2/687.png">
                             </div>
                             <div class="text">
                                 <h4 class="">${major.major_name}</h4>
@@ -255,14 +224,14 @@
                             <div class="warp-class2-text">
                                 <div class="iconfont text-padding">threshold
                                     <c:forEach begin="1" end="${major.threshold}">
-                                        <img src="/xx.png">
+                                        <img src="/Task4/other/images2/xx.png">
                                     </c:forEach>
                                 </div>
                             </div>
                             <div class="warp-class2-text">
                                 <div class="iconfont text-padding text-border-left">difficulty
                                     <c:forEach begin="1" end="${major.difficulty}">
-                                        <img src="/xx.png">
+                                        <img src="/Task4/other/images2/xx.png">
                                     </c:forEach>
                                 </div>
                             </div>
@@ -315,6 +284,6 @@
 </div>
 
 </body>
-<script src="/jquery.min.js"></script>
-<script  src="/bootstrap.min.js"></script>
+<script src="/Task4/other/js/jquery.min.js"></script>
+<script  src="/Task4/other/js/bootstrap.min.js"></script>
 </html>

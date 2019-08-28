@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface MajorService {
     List<Major> findMajor();
+    boolean updateLear(int id);
 }

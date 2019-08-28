@@ -21,6 +21,10 @@
         SELECT COUNT(status) from students where status = #{status}
     </select>
     <select id="findStudent" resultMap="StudentResultMap">
-        select * from students
+        select * from students order by salary desc limit 4
     </select>
+
+    <select id="countByMI" resultType="java.lang.Integer" parameterType="java.lang.Integer">
+        select count(status) from students where status = 0 and major_id = #{id}
+     </select>
 </mapper>

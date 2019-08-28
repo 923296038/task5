@@ -14,6 +14,7 @@
         <result property="learning" column="learning" javaType="int"/>
         <result property="create_at" column="create_at" javaType="long"/>
         <result property="update_at" column="update_at" javaType="long"/>
+        <result property="type" column="type" javaType="int"/>
         <result property="major_name" column="major_name" javaType="String"/>
         <result property="major_intro" column="major_intro" javaType="String"/>
         <result property="major_intro_detailed" column="major_intro_detailed" javaType="String"/>
@@ -23,7 +24,13 @@
         <result property="update_by" column="update_by" javaType="String"/>
 
     </resultMap>
+
+
+
     <select id="findMajor" resultMap="MajorResultMap">
         select * from majors
     </select>
+    <update id="updateLear" parameterType="int">
+        update majors set learning = #{learning} where id = #{id}
+    </update>
 </mapper>

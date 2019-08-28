@@ -9,7 +9,6 @@ public class DateTag extends TagSupport {
     private String value;
     @Override
     public int doStartTag() throws JspException {
-
         String vv = "" + value;
         try {
             //vv的trim方法 用于删除字符串头尾空白符
@@ -21,7 +20,6 @@ public class DateTag extends TagSupport {
             calendar.setTimeInMillis(time );
             SimpleDateFormat dateformat = new SimpleDateFormat
                     ("yyyy-MM-dd HH:mm:ss");
-
             String s = dateformat.format(calendar.getTime());
             pageContext.getOut().write(s);
         } catch (Exception e) {

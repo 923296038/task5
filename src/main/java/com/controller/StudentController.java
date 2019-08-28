@@ -17,16 +17,34 @@ public class StudentController {
     @Autowired
     StudentService studentService;
     private static final Logger log= LogManager.getLogger(StudentController.class);
+
+    //student,body
     @RequestMapping(value = "/body",method = RequestMethod.GET)
     public String count(Model model){
         int working = studentService.countStudent(1);
         int learning = studentService.countStudent(0);
         List<Student> studentList = studentService.findStudent();
+        List<Integer> integerList;
+        model.addAttribute("item","body");
         model.addAttribute("working",working);
         model.addAttribute("learning",learning);
         model.addAttribute("studentList",studentList);
         log.error(studentList);
-        return "page";
+        return "myView";
     }
 
+    //student,body
+    @RequestMapping(value = "/noHF",method = RequestMethod.GET)
+    public String noHF(Model model){
+        int working = studentService.countStudent(1);
+        int learning = studentService.countStudent(0);
+        List<Student> studentList = studentService.findStudent();
+        List<Integer> integerList;
+        model.addAttribute("item","body");
+        model.addAttribute("working",working);
+        model.addAttribute("learning",learning);
+        model.addAttribute("studentList",studentList);
+        log.error(studentList);
+        return "secondView";
+    }
 }
