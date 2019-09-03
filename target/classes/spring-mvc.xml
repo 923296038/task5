@@ -88,6 +88,15 @@
             </list>
         </property>
     </bean>
+
+    <!--配置拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/u/**"/>
+            <bean class="com.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
     <!--<bean id="tilesViesResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>
     </bean>
@@ -99,7 +108,6 @@
             </list>
         </property>
     </bean>-->
-
 
     <!--无效的写法-->
     <!--<mvc:annotation-driven   validator="validator"/>
@@ -155,10 +163,6 @@
         </property>
     </bean>-->
 
-
-    <!--配置校验器-->
-
-
     <!--上传图片的配置-->
     <!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <property name="defaultEncoding" value="utf-8"/>
@@ -167,7 +171,5 @@
         &lt;!&ndash; 最大文件大小，-1为不限制大小 &ndash;&gt;
         <property name="maxUploadSize" value="-1"/>
     </bean>-->
-
-
 
 </beans>

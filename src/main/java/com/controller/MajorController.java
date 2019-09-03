@@ -19,7 +19,7 @@ public class MajorController {
     MajorService majorService;
     private static final Logger log = LogManager.getLogger(MajorController.class);
 
-    @RequestMapping(value = "/body1")
+    @RequestMapping(value = "/u/majors")
     public String major(Model model) {
         List<Major> majorList = majorService.findMajor();
         log.error(majorList.size());

@@ -1,11 +1,10 @@
-com\service\MajorService.class
 com\pojo\Student.class
-com\mapper\MajorMapper.class
 com\controller\StudentController.class
-com\converter\DateTag.class
-com\serviceImpl\MajorServiceImpl.class
 com\mapper\StudentMapper.class
-com\controller\MajorController.class
 com\service\StudentService.class
 com\pojo\Major.class
+com\service\MajorService.class
+com\mapper\MajorMapper.class
+com\serviceImpl\MajorServiceImpl.class
+com\controller\MajorController.class
 com\serviceImpl\StudentServiceImpl.class

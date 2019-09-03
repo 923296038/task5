@@ -8,6 +8,9 @@
 --%>
 <!doctype html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%--先验证cookie--%>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -16,19 +19,20 @@
     <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link href="/Task4/other/css/t11.css" rel="stylesheet" type="text/css">
-    <link href="/Task4/other/css/base.css" rel="stylesheet" type="text/css">
-    <link href="/Task4/other/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/other/css/t11.css" rel="stylesheet" type="text/css">
+    <link href="/other/css/base.css" rel="stylesheet" type="text/css">
+    <link href="/other/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../bootstrap-3.3.5-dist/css/bootstrap.css">
-    <link href="/Task4/other/css/Untitled-3.css" rel="stylesheet" type="text/css">
-    <link href="/Task4/other/css/Untitled-1base.css" rel="stylesheet" type="text/css">
+    <link href="/other/css/Untitled-3.css" rel="stylesheet" type="text/css">
+    <link href="/other/css/Untitled-1base.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
 
 <div class="container">
-
+    当前用户:${user.username}<br/>
+    <a href="/logout" >退出登录</a>
     <div class="nav-title">首页&gt;职业</div>
     <div class="nav-bar">
         <span class="">方向：</span>

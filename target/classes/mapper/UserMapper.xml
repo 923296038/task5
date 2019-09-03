@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.UserMapper">
+    <!--<resultMap id="UserResultMap" type="com.pojo.User">
+        <id property="id" column="id" javaType="int"/>
+        <result property="username" column="username" javaType="String"/>
+        <result property="password" column="password" javaType="String"/>
+    </resultMap>-->
+    <insert id="insertAUser" parameterType="User">
+        insert into users (username,password_md5) values (#{username},#{password_md5})
+    </insert>
+    <select id="countByUsername" resultType="java.lang.Integer" parameterType="String">
+        SELECT COUNT(username) from users where username = #{username}
+    </select>
+    <select id="findByUsername" resultType="String" parameterType="String">
+        select password_md5 from users where username = #{username}
+    </select>
+
+</mapper>

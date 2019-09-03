@@ -23,7 +23,7 @@ public class MajorServiceImpl implements MajorService {
     @Override
     public boolean updateLear(int id) {
         int learning = studentMapper.countByMI(id);
-        System.out.println(learning);
+//        System.out.println(learning);
         return majorMapper.updateLear(learning ,id);
     }
 }

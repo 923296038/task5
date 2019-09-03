@@ -19,7 +19,7 @@ public class StudentController {
     private static final Logger log= LogManager.getLogger(StudentController.class);
 
     //student,body
-    @RequestMapping(value = "/body",method = RequestMethod.GET)
+    @RequestMapping(value = "/students",method = RequestMethod.GET)
     public String count(Model model){
         int working = studentService.countStudent(1);
         int learning = studentService.countStudent(0);
