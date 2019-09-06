@@ -9,13 +9,23 @@
         <result property="password" column="password" javaType="String"/>
     </resultMap>-->
     <insert id="insertAUser" parameterType="User">
-        insert into users (username,password_md5) values (#{username},#{password_md5})
+        insert into users (user_name,salt,password_md5,nick_name,email,mobile_number,create_at)
+        values (#{user_name},#{salt},#{password_md5},#{nick_name},#{email},#{mobile_number},#{create_at})
     </insert>
     <select id="countByUsername" resultType="java.lang.Integer" parameterType="String">
-        SELECT COUNT(username) from users where username = #{username}
+        SELECT COUNT(user_name) from users where user_name = #{user_name}
     </select>
     <select id="findByUsername" resultType="String" parameterType="String">
-        select password_md5 from users where username = #{username}
+        select password_md5 from users where user_name = #{user_name}
+    </select>
+    <select id="findIdByUserName" resultType="java.lang.Integer" parameterType="String">
+        select id from users where user_name = #{user_name}
+    </select>
+    <select id="verify" resultType="java.lang.Integer" parameterType="int">
+        select count(id) from users where id=#{id}
+    </select>
+    <select id="getSalt" resultType="java.lang.String" parameterType="String">
+        select salt from users where user_name = #{user_name}
     </select>
 
 </mapper>

@@ -29,7 +29,7 @@ public class StudentController {
         model.addAttribute("working",working);
         model.addAttribute("learning",learning);
         model.addAttribute("studentList",studentList);
-        log.error(studentList);
+//        log.error(studentList);
         return "myView";
     }
 
@@ -44,7 +44,7 @@ public class StudentController {
         model.addAttribute("working",working);
         model.addAttribute("learning",learning);
         model.addAttribute("studentList",studentList);
-        log.error(studentList);
+//        log.error(studentList);
         return "secondView";
     }
 }

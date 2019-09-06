@@ -3,14 +3,17 @@ D:\谷歌下载\task5\src\main\java\com\service\UserService.java
 D:\谷歌下载\task5\src\main\java\com\util\EncodeUtil.java
 D:\谷歌下载\task5\src\main\java\com\service\MajorService.java
 D:\谷歌下载\task5\src\main\java\com\pojo\User.java
+D:\谷歌下载\task5\src\main\java\com\util\DesUtil.java
 D:\谷歌下载\task5\src\main\java\com\controller\MajorController.java
 D:\谷歌下载\task5\src\main\java\com\controller\StudentController.java
+D:\谷歌下载\task5\src\main\java\com\util\Token_util.java
 D:\谷歌下载\task5\src\main\java\com\interceptor\SpringMVCInterceptor.java
 D:\谷歌下载\task5\src\main\java\com\mapper\StudentMapper.java
 D:\谷歌下载\task5\src\main\java\com\interceptor\LoginInterceptor.java
 D:\谷歌下载\task5\src\main\java\com\util\DateTag.java
 D:\谷歌下载\task5\src\main\java\com\serviceImpl\MajorServiceImpl.java
 D:\谷歌下载\task5\src\main\java\com\serviceImpl\StudentServiceImpl.java
+D:\谷歌下载\task5\src\main\java\com\util\StrConvertUtil.java
 D:\谷歌下载\task5\src\main\java\com\service\StudentService.java
 D:\谷歌下载\task5\src\main\java\com\controller\UserController.java
 D:\谷歌下载\task5\src\main\java\com\mapper\UserMapper.java

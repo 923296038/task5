@@ -301,11 +301,16 @@
       <version>3.0.5</version>
     </dependency>
     <!--tiles框架配置 end-->
-
+    <!--jwt-->
+    <dependency>
+      <groupId>com.auth0</groupId>
+      <artifactId>java-jwt</artifactId>
+      <version>3.5.0</version>
+    </dependency>
   </dependencies>
 
   <build>
-    <finalName>Task4</finalName>
+    <finalName>Task5</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>

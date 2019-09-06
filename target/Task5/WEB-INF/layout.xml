@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!--主布局-->
+    <definition name="layout" template="/WEB-INF/jsp/mainLayout.jsp"></definition>
+    <!--第二种布局-->
+    <definition name="second_layout" template="/WEB-INF/jsp/secondLayout.jsp"></definition>
+
+    <!--模块myView,继承自主布局模板-->
+    <definition name="myView" extends="layout">
+        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp"/>
+        <put-attribute name="item"   expression="/WEB-INF/jsp/${item}.jsp"  />
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp"/>
+    </definition>
+
+    <!--模块secondView,继承自第二种布局模板-->
+    <definition name="secondView" extends="second_layout">
+        <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp"/>
+        <put-attribute name="item"   expression="/WEB-INF/jsp/${item}.jsp"  />
+        <put-attribute name="side" value="/WEB-INF/jsp/side.jsp"/>
+    </definition>
+</tiles-definitions>

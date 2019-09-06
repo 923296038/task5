@@ -9,6 +9,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.rmi.CORBA.Util;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class testUser {
     private static final Logger log= LogManager.getLogger(testUser.class);
@@ -22,12 +25,14 @@ public class testUser {
     public void testFindByUsername(){
         String s = userService.findByUsername("wang");
         log.error(s);
+        int i = userService.findIdByUserName("chen");
+        log.error(i);
     }
     @Test
     public void testInsert(){
         User user = new User();
-        user.setUsername("chen");
-        user.setPassword("888888");
+        user.setUser_name("13456wq");
+        user.setPassword("123456wq");
         userService.insertAUser(user);
         log.error(user);
     }
@@ -36,10 +41,13 @@ public class testUser {
     //数据库中存在一条 wang 123456的数据
     public void testGranted(){
         User user = new User();
-        user.setUsername("chen");
+        user.setUser_name("chen");
         user.setPassword("888888");
 //        log.error("加盐md5 : "+util.MD5Util("123456"+"123456"));
         boolean flag = userService.granted(user);
+
+        log.error("检验id:  "+userService.verify(11));
+        log.error(userService.user_dupli("wang"));
     }
 }
 
