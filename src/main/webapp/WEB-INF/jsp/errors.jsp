@@ -25,6 +25,7 @@
 <c:if test="${dupliErrors!=null}">
     ${dupliErrors}
 </c:if>
+${not_matchErrors}
 <a href="/Task5/toNewUser">重新填写</a>
 </body>
 </html>

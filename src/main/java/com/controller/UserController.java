@@ -12,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -41,8 +42,8 @@ public class UserController {
     * 输入账密>匹配数据库通过>签发token>
     * 存入cookie>拦截器检验token通过>/u/majors
     * */
-    @RequestMapping(value = "/login")
-    public String login(HttpServletRequest request,User user, Model model, HttpSession session,HttpServletResponse response) throws Exception {
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    public String login(HttpServletRequest request, @RequestBody User user, Model model, HttpSession session, HttpServletResponse response) throws Exception {
         response.setContentType("text/html;charset=UTF-8;pageEncoding=UTF-8");
         response.setCharacterEncoding("UTF-8");
         log.error(user.getUser_name());
@@ -84,13 +85,17 @@ public class UserController {
     *注册
     * */
     @RequestMapping(value = "newUser",method = RequestMethod.POST)
-    public String newUser(Model model, @Validated User user, BindingResult bindingResult){
+    public String newUser(Model model, @Validated @RequestBody User user, BindingResult bindingResult){
         log.error("执行了这个方法");
-        if (bindingResult.hasErrors()||userService.user_dupli(user.getUser_name())){
+        if (!user.getPassword().equals(user.getPassword_repeat())
+                ||bindingResult.hasErrors()
+                ||userService.user_dupli(user.getUser_name())){
             List<ObjectError> allErrors = bindingResult.getAllErrors();
             model.addAttribute("allErrors",allErrors);
             if (userService.user_dupli(user.getUser_name()))
                 model.addAttribute("dupliErrors","用户名已被注册,请重试");
+            if (!user.getPassword().equals(user.getPassword_repeat()))
+                model.addAttribute("not_matchErrors","两次密码不匹配");
             for (ObjectError objectError:allErrors){
                 log.error(objectError.getDefaultMessage());
             }
@@ -100,7 +105,7 @@ public class UserController {
         return "login";
     }
 
-    @RequestMapping(value = "/logout")
+    @RequestMapping(value = "/logout",method = RequestMethod.GET)
     public String logout(HttpServletRequest request,HttpServletResponse response,HttpSession session){
         Cookie[] cookies0 = request.getCookies();
         if (cookies0 != null){
